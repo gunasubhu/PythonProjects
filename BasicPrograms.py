@@ -42,7 +42,24 @@ def addtwonumbers(num1,num2):
     sum=num1+num2
     print(f"Sum of {num1}+{num2}={sum}")
 
+def primenumber(n):
+  #n=13
+  flag=0
+  endrange=n//2
+  for i in range(2,endrange+1):
+    if n%i==0:
+      flag=1
+      break
+    else:
+      flag=0
+  if flag==0:
+    print("prime number:",n)
+  else:
+    print("not a prime number:",n)
 
+
+
+primenumber(13)
 findSumOfArray()   
 area(4)
 compound_interest(10000,6,5)
