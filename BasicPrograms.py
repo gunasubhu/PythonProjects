@@ -57,6 +57,20 @@ def primenumber(n):
   else:
     print("not a prime number:",n)
 
+#How to find the highest number
+a=10
+b=200
+c=300
+
+if a>b and a>c:
+  print(f"the highest number is: {a}")
+  
+elif b>c:
+  print(f"the highest number is: {b}")
+  
+else: 
+   print(f"the highest number is: {c}")
+
 
 
 primenumber(13)
