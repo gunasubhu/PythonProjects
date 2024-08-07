@@ -71,8 +71,32 @@ elif b>c:
 else: 
    print(f"the highest number is: {c}")
 
+#Python program to print all Prime numbers in an Interval
+def primeseries(start,end):
+    for n in range(start,end):
+          flag=0
+          endrange=n//2
+          for i in range(2,endrange+1):
+            if n%i==0:
+              flag=1
+              break
+            else:
+              flag=0
+          if flag==0:
+            print("prime number:",n)
 
-
+def fibonacciNumber(end):
+    n1=0
+    n2=1
+    for i in range(1,end+1):
+        n3=n1+n2
+        n1=n2
+        n2=n3
+        print(n3)
+        
+        
+fibonacciNumber(10)
+primeseries(2,100)
 primenumber(13)
 findSumOfArray()   
 area(4)
