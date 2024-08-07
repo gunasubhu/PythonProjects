@@ -118,8 +118,26 @@ def IsFibonacciNumber(n):
         print(f"{n} is a fibonacci number")
     else:
         print(f"{n} is not a fibonacci number")
+
+#student marks and status:
+def FindtheStudentMarks(mark):
+    if mark>=450 and mark<=500:
+        print("O grade")
+    elif mark>=400 and mark<=449:
+        print("A grade")
+    elif mark>=350 and mark<=399:
+        print("B grade")
+    elif mark>=300 and mark<=349:
+        print("C grade")
+    elif mark>=250 and mark<=299:
+        print("D grade")
+    elif mark<250:
+        print("Fail")
+    elif mark>500:
+        print("Invalid number")
         
-        
+
+FindtheStudentMarks(-5)                
 IsFibonacciNumber(33)      
 fibonacciNumber(10)
 primeseries(2,100)
