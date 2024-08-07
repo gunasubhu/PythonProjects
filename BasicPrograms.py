@@ -93,8 +93,34 @@ def fibonacciNumber(end):
         n1=n2
         n2=n3
         print(n3)
+
+
+#Python Program for How to check if a given number is Fibonacci number?
+import math
+ 
+def IsPerfectSquare(n):
+    sqrt_num = math.sqrt(n)
+    if sqrt_num.is_integer():
+        return True
+    else:
+        return False
+        
+# val=IsPerfectSquare(25)  
+# print(val)
+
+def IsFibonacciNumber(n):
+    n1=(5*(n**2))+4
+    n2=(5*(n**2))-4
+    
+    p1=IsPerfectSquare(n1)
+    p2=IsPerfectSquare(n2)
+    if p1==True or p2==True:
+        print(f"{n} is a fibonacci number")
+    else:
+        print(f"{n} is not a fibonacci number")
         
         
+IsFibonacciNumber(33)      
 fibonacciNumber(10)
 primeseries(2,100)
 primenumber(13)
