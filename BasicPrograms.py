@@ -182,13 +182,36 @@ def studentDetails(name,mark1,mark2,mark3,mark4,mark5):
         overallstatus='Pass'
     
     print("Overall Status:",overallstatus)
-    
 
-
-
-studentDetails("Ranjith",50,70,65,90,60)
+#Banck account transactons(Deposit,Withdrawal)
+def AccountMaintanance(name,balance,transactiontype,transactonAmount):
+    message =''    
+    if transactiontype=="deposit":#Comparisson operator
+        Currentbalance=balance+transactonAmount
+        message="Amount deposited successfully"
+    elif transactiontype=="withdrawal":
+        if transactonAmount>balance:
+            message="Insuffient fund"
+        else:
+            Currentbalance=balance-transactonAmount
+            message="Withdrawal successfully"
+            if Currentbalance<1000:
+                 message=message+". Please maintain the minimum balance amount"
+    else:
+        Currentbalance=balance
+        message="Invalid transaction"
         
+    print("Account holder name:",name)
+    print("Account balance is:",balance)
+    print("Transaction Type:",transactiontype)
+    print("Transaction Amount:",transactonAmount)
+    print("Current balance:",Currentbalance)
+    print("Transaction messsage:",message)
 
+
+        
+AccountMaintanance("Ranjith",10000,"withdrawal",9500)   
+studentDetails("Ranjith",50,70,65,90,60)
 FindtheStudentMarks(-5)                
 IsFibonacciNumber(33)      
 fibonacciNumber(10)
