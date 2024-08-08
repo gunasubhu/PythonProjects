@@ -135,6 +135,58 @@ def FindtheStudentMarks(mark):
         print("Fail")
     elif mark>500:
         print("Invalid number")
+
+
+def studentMarks(mark):
+    if mark>=80 and mark<=100:
+        return "Distinction"
+    elif mark>=60 and mark<=79:
+        return "First class"
+    elif mark>=50 and mark<=59:
+        return "Second class"
+    elif mark>=35 and mark<49:
+        return "Third class"
+    elif mark<35:
+        return "Fail"
+    elif mark>100:
+        return "Invalid"
+        
+#Get the student mark details
+def studentDetails(name,mark1,mark2,mark3,mark4,mark5):
+    print("Student name:",name)
+    total_marks=(mark1+mark2+mark3+mark4+mark5)
+    print("Total marks:", total_marks)
+    Tamil=studentMarks(mark1)
+    English=studentMarks(mark2)
+    Maths=studentMarks(mark3)
+    Science=studentMarks(mark4)
+    SocialScience=studentMarks(mark5)
+    print(f"Tamil mark: {mark1}, Class: {Tamil}")
+    print(f"English mark: {mark2}, Class: {English}")
+    print(f"Maths mark: {mark3}, Class: {Maths}")
+    print(f"Science mark: {mark4}, Class: {Science}")
+    print(f"Social Science mark: {mark5}, Class: {SocialScience}")
+    
+    overallstatus='Pass'
+    if Tamil=='Fail' or Tamil=='Invalid':
+        overallstatus='Fail'
+    elif English=='Fail' or English=='Invalid':
+        overallstatus='Fail'    
+    elif Maths=='Fail' or Maths=='Invalid':
+        overallstatus='Fail'
+    elif Science=='Fail' or Science=='Invalid':
+        overallstatus='Fail'
+    elif SocialScience=='Fail' or SocialScience=='Invalid':
+        overallstatus='Fail'
+    else:
+        overallstatus='Pass'
+    
+    print("Overall Status:",overallstatus)
+    
+
+
+
+studentDetails("Ranjith",50,70,65,90,60)
         
 
 FindtheStudentMarks(-5)                
