@@ -209,7 +209,16 @@ def AccountMaintanance(name,balance,transactiontype,transactonAmount):
     print("Transaction messsage:",message)
 
 
+#Python Program for Sum of squares of first n natural numbers.
+
+def Sumofsquares(n):
+    sum=0
+    for i in range(1,n+1):
+        sum=sum+i*i
+    print(f"Sum of squares of first {n} natural numbers: {sum}")
         
+
+Sumofsquares(4)  
 AccountMaintanance("Ranjith",10000,"withdrawal",9500)   
 studentDetails("Ranjith",50,70,65,90,60)
 FindtheStudentMarks(-5)                
