@@ -222,9 +222,53 @@ def cubenumber(n):
     for i in range(1,5+1):
         sum=sum+i*i*i
     print(f"cube sum of first {n} natural numbers: {sum}")
-        
-cubenumber(5)        
 
+
+def studentMarks(mark):
+    if mark>=80 and mark<=100:
+        return "Distinction"
+    elif mark>=60 and mark<=79:
+        return "First class"
+    elif mark>=50 and mark<=59:
+        return "Second class"
+    elif mark>=35 and mark<49:
+        return "Third class"
+    elif mark<35:
+        return "Fail"
+    elif mark>100:
+        return "Invalid"
+        
+#Get the student mark details using array program.
+def studentDetails(name,marks):
+    print("Student name:",name)
+    total_marks=sum(marks)
+    print("Total marks:", total_marks)
+    Tamil,English,Maths,Science,SocialScience=marks
+    print(f"Tamil mark: {Tamil}, Class: {studentMarks(Tamil)}")
+    print(f"English mark: {English}, Class: {studentMarks(English)}")
+    print(f"Maths mark: {Maths}, Class: {studentMarks(Maths)}")
+    print(f"Science mark: {Science}, Class: {studentMarks(Science)}")
+    print(f"Social Science mark: {SocialScience}, Class: {studentMarks(SocialScience)}")
+    
+    overallstatus='Pass'
+    if Tamil=='Fail' or Tamil=='Invalid':
+        overallstatus='Fail'
+    elif English=='Fail' or English=='Invalid':
+        overallstatus='Fail'    
+    elif Maths=='Fail' or Maths=='Invalid':
+        overallstatus='Fail'
+    elif Science=='Fail' or Science=='Invalid':
+        overallstatus='Fail'
+    elif SocialScience=='Fail' or SocialScience=='Invalid':
+        overallstatus='Fail'
+    else:
+        overallstatus='Pass'
+    
+    print("Overall Status:",overallstatus)
+    
+ 
+studentDetails("Ranjith",[50,70,65,90,60])        
+cubenumber(5)
 Sumofsquares(4)  
 AccountMaintanance("Ranjith",10000,"withdrawal",9500)   
 studentDetails("Ranjith",50,70,65,90,60)
