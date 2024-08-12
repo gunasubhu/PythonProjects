@@ -265,8 +265,24 @@ def studentDetails(name,marks):
         overallstatus='Pass'
     
     print("Overall Status:",overallstatus)
-    
+
+#Reverse the list
+def reversedlist(num):
  
+    num2 = []
+    for i in num:
+        print(i,[i],num2)
+        num2 = [i] + num2
+    print("reversed list : ", num2)
+    
+
+
+
+#Reverse the list
+list = [1, 2, 3, 4, 5]
+print("reverse list : ", original_list[::-1])
+    
+reversedlist([1, 2, 3, 4, 5,6,7,8,9]) 
 studentDetails("Ranjith",[50,70,65,90,60])        
 cubenumber(5)
 Sumofsquares(4)  
