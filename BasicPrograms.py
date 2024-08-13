@@ -17,12 +17,6 @@ def area(r):
   area = math.pi* pow(r,2)
   print('Area of circle is:' ,area)
 
-def findSumOfArray():
-  arr = [1, 2, 3, 4, 5];
-  sum = 0;
-  for i in range(0, len(arr)):
-    sum = sum + arr[i];
-  print("Sum of all the elements of an array: " + str(sum));
 
 def factorial_of_number(num1):
     fact=1
@@ -266,36 +260,8 @@ def studentDetails(name,marks):
     
     print("Overall Status:",overallstatus)
 
-#Reverse the list
-def reversedlist(num):
-    num2 = []
-    for i in num:
-        print(i,[i],num2)
-        num2 = [i] + num2
-    print("reversed list : ", num2)
     
-#Python Program to Split the array and add the first part to the end
- mylist=[1,2,3,4,5,6,7]
- firsthalf=mylist[0:4]
- secondhalf=mylist[4:]
- addtwolist=(secondhalf + firsthalf)
- print(addtwolist)
 
-#Reverse the list
-list = [1, 2, 3, 4, 5]
-print("reverse list : ", original_list[::-1])
-
-#Python Program for Find reminder of array multiplication divided by n
-def findremainder(arr,n):
-    mul=1
-    for i in arr:
-        mul=mul*i
-    print(mul)
-    print(mul%n)
-    
-findremainder([100, 10, 5, 25, 35, 14],11)
-    
-reversedlist([1, 2, 3, 4, 5,6,7,8,9]) 
 studentDetails("Ranjith",[50,70,65,90,60])        
 cubenumber(5)
 Sumofsquares(4)  
@@ -306,7 +272,6 @@ IsFibonacciNumber(33)
 fibonacciNumber(10)
 primeseries(2,100)
 primenumber(13)
-findSumOfArray()   
 area(4)
 compound_interest(10000,6,5)
 simple_interest(10000,6,6)
