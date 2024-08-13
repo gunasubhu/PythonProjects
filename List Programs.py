@@ -21,7 +21,38 @@ def existsinlist(lst):
         print(f"{val} is not available in tha list.")
     
     
+#Different ways to clear a list in Python
+# 1. clear()
+def clearList(mylist):
+    print("Mylist data:", mylist)
+    mylist.clear()
+    print("clear the mylist data:", mylist)
+
+# 2. delete the particlar index
+def clearList(mylist):
+    print("Mylist data:", mylist)
+    del mylist[2]
+    print("clear the mylist data:", mylist)
+
+# 3. delete the list
+def clearList(mylist):
+    print("Mylist data:", mylist)
+    del mylist[:]
+    print("clear the mylist data:", mylist)
+
+# 4. 
+def clearList(mylist):
+    print("Mylist data:", mylist)
+    mylist *=0
+    print("clear the mylist data:", mylist)
     
+clearList([1,2,3,4,5])
+     
+    
+
+    
+    
+clearList([1,2,3,4,5])  
 existsinlist([1,2,3,4,5,6])  
 lengthList([1,2,3,4,5,6])      
 swaplist([1,2,3,4,5,6])
