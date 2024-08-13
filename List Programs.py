@@ -11,7 +11,17 @@ def swaplist(arr):
 def lengthList(arr):
     length=len(arr)
     print("Length of list:",length)
+
+#Python | Ways to check if element exists in list.
+def existsinlist(lst):
+    val=10
+    if val in lst:
+        print(f"{val} is available in the list.")
+    else:
+        print(f"{val} is not available in tha list.")
     
     
+    
+existsinlist([1,2,3,4,5,6])  
 lengthList([1,2,3,4,5,6])      
 swaplist([1,2,3,4,5,6])
