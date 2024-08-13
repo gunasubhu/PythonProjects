@@ -51,6 +51,14 @@ def clearList(mylist):
     print("Mylist data:", mylist)
     mylist = []
     print("clear the mylist data:", mylist)
+
+
+#Python program to find sum of elements in list
+def clearList(mylist):
+    sumoflist=sum(mylist)
+    print("Sum of the list:", sumoflist)
+    
+clearList([1,2,3,4,5])
     
 
     
