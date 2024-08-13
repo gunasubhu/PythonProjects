@@ -79,10 +79,26 @@ def multiplyofList(mylist):
 def reverseList(mylist):
     list1=mylist[::-1]
     print(f"Reverse the list : {list1}")
+     
 # 2. Reversing a List in Python(Reverse method)
 def reverseList(mylist):
     list1=list(reversed(mylist))
     print(f"Reverse the list : {list1}")
+
+#Python program to find smallest number in a list
+def MinimumNumberOfList(mylist):
+    list1=min(mylist)
+    print(f"Minimum number of list : {list1}")
+
+
+#Python program to find largest number in a list
+def MaximumNumberOfList(mylist):
+    list1=min(mylist)
+    print(f"Maximum number of list : {list1}")
+ 
+
+MaximumNumberOfList([1,2,3,4,5])
+MinimumNumberOfList([1,2,3,4,5])
  
 
 reverseList([1,2,3,4,5]) 
