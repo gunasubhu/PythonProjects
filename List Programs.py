@@ -40,14 +40,19 @@ def clearList(mylist):
     del mylist[:]
     print("clear the mylist data:", mylist)
 
-# 4. 
+# 4. Using *=0
 def clearList(mylist):
     print("Mylist data:", mylist)
     mylist *=0
     print("clear the mylist data:", mylist)
     
-clearList([1,2,3,4,5])
-     
+# 5.List Re-Initialization
+def clearList(mylist):
+    print("Mylist data:", mylist)
+    mylist = []
+    print("clear the mylist data:", mylist)
+    
+
     
 
     
