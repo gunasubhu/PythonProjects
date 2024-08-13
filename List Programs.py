@@ -65,6 +65,17 @@ def sumofList(mylist):
     for i in mylist:
         total = total + i
     print(f"Sum of the element list is : {total}")
+
+
+# Python | Multiply all numbers in the list
+def multiplyofList(mylist):
+    total = 1
+    for i in mylist:
+        total = total * i
+    print(f"Sum of the element list is : {total}")
+ 
+
+multiplyofList([1,2,3])
  
 
 sumofList([10,20,1,3])     
