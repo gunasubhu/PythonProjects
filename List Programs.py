@@ -73,13 +73,21 @@ def multiplyofList(mylist):
     for i in mylist:
         total = total * i
     print(f"Sum of the element list is : {total}")
+
+
+# 1. Reversing a List in Python(Slicing technique)
+def reverseList(mylist):
+    list1=mylist[::-1]
+    print(f"Reverse the list : {list1}")
+# 2. Reversing a List in Python(Reverse method)
+def reverseList(mylist):
+    list1=list(reversed(mylist))
+    print(f"Reverse the list : {list1}")
  
 
+reverseList([1,2,3,4,5]) 
 multiplyofList([1,2,3])
- 
-
-sumofList([10,20,1,3])     
-    
+sumofList([10,20,1,3])      
 clearList([1,2,3,4,5])  
 existsinlist([1,2,3,4,5,6])  
 lengthList([1,2,3,4,5,6])      
