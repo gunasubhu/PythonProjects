@@ -198,14 +198,9 @@ def countlist(list1):
     print(list2)
 
 countlist([1,2,3,4,2,5,2,3,2,])
-
 copylist([1,2,3,[4,6],5])
-
-
-empty_list_remove([5, 6, [], 3, [], [], 9])         
-
-Remove_Multiple_Elements_List([11, 5, 17, 18, 23, 50,22])       
-
+empty_list_remove([5, 6, [], 3, [], [], 9])      
+Remove_Multiple_Elements_List([11, 5, 17, 18, 23, 50,22])      
 AllNagativeNumberslist(-4,8)
 AllPasitiveNumberslist(-4,8)  
 NagativeNumberslist([10,2,-4,7,-9])         
