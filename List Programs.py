@@ -192,6 +192,13 @@ def copylist(list1):
     list2=list1.copy()
     print(list2)
 
+#Python | Count occurrences of an element in a list
+def countlist(list1):
+    list2=list1.count(2)
+    print(list2)
+
+countlist([1,2,3,4,2,5,2,3,2,])
+
 copylist([1,2,3,[4,6],5])
 
 
