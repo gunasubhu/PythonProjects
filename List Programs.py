@@ -95,12 +95,30 @@ def MinimumNumberOfList(mylist):
 def MaximumNumberOfList(mylist):
     list1=min(mylist)
     print(f"Maximum number of list : {list1}")
- 
 
+#Python program to find second largest number in a list
+def secondlargenumberlist(mylist):
+    mylist.sort()
+    print(mylist[-2])
+
+
+#Python program to find second smallest number in a list
+def secondsmallestnumberlist(mylist):
+    mylist.sort()
+    print(mylist[2])
+
+#Python program to find N largest elements from a list
+def nlargenumberlist(mylist):
+    n=4
+    mylist.sort()
+    print(mylist[-n:])
+     
+    
+nlargenumberlist([10,50,20,40,15,23])
+secondsmallestnumberlist([1,2,6,4,5,3])
+secondlargenumberlist([1,2,6,4,5,3])
 MaximumNumberOfList([1,2,3,4,5])
 MinimumNumberOfList([1,2,3,4,5])
- 
-
 reverseList([1,2,3,4,5]) 
 multiplyofList([1,2,3])
 sumofList([10,20,1,3])      
