@@ -112,8 +112,75 @@ def nlargenumberlist(mylist):
     n=4
     mylist.sort()
     print(mylist[-n:])
-     
-    
+
+
+#Python program to print even numbers in a list
+def evenlist(num):
+    print("even numbers:")
+    for i in num:
+        if i % 2 == 0:
+            print(i,end=" ")
+
+
+#Python program to print odd numbers in a list
+def OddNumberList(num):
+    print("Odd numbers:")
+    for i in num:
+        if i % 2 != 0:
+            print(i,end=" ")
+
+#Python program to print all even numbers in a range
+def AllEvenNumber(num1,num2):
+    print("All even  numbers:")
+    for i in range(num1,num2):
+        if i % 2 == 0:
+            print(i,end=" ")
+
+#Python program to print all even numbers in a range
+def AllOddNumber(num1,num2):
+    print("All even  numbers:")
+    for i in range(num1,num2):
+        if i % 2 != 0:
+            print(i,end=" ")
+
+#Python program to print positive numbers in a list
+def positiveNumberslist(num):
+    print("Positive numbers in a list")
+    for i in num:
+        if i >=0:
+            print(i, end=' ')
+
+
+#Python program to print negative numbers in a list
+def NagativeNumberslist(num):
+    print("Nagative numbers in a list")
+    for i in num:
+        if i < 0:
+            print(i, end=' ')
+
+#Python program to print all positive numbers in a range
+def AllPositiveNumberslist(num1,num2):
+    print("Positive numbers in a list")
+    for i in range(num1,num2):
+        if i >=0:
+            print(i, end=' ')
+
+#Python program to print all nagative numbers in a range
+def AllNagativeNumberslist(num1,num2):
+    print("Nagative numbers in a list")
+    for i in range(num1,num2):
+        if i < 0:
+            print(i, end=' ')
+            
+
+AllNagativeNumberslist(-4,8)
+AllPasitiveNumberslist(-4,8)  
+NagativeNumberslist([10,2,-4,7,-9])         
+positiveNumberslist([10,2,-4,7,-9])       
+AllOddNumber(8,30)       
+AllEvenNumber(8,30)       
+OddNumberList([5,1,7,9,10,2,6,])
+evenlist([5,1,7,9,10,2,6,])     
 nlargenumberlist([10,50,20,40,15,23])
 secondsmallestnumberlist([1,2,6,4,5,3])
 secondlargenumberlist([1,2,6,4,5,3])
