@@ -171,7 +171,26 @@ def AllNagativeNumberslist(num1,num2):
     for i in range(num1,num2):
         if i < 0:
             print(i, end=' ')
-            
+
+#Remove multiple elements from a list in Python
+def Remove_Multiple_Elements_List(num):
+    print("Remove multiple numbers in a list")
+    for i in num:
+        del num[1:5]
+        print(i, end=' ')
+
+# Python Code to Remove empty List from List
+def empty_list_remove(mylist):
+    print("removed empty list")
+    emptylist = []
+    for i in mylist:
+        if i != emptylist:
+            print(i, end=' ')
+
+
+empty_list_remove([5, 6, [], 3, [], [], 9])         
+
+Remove_Multiple_Elements_List([11, 5, 17, 18, 23, 50,22])       
 
 AllNagativeNumberslist(-4,8)
 AllPasitiveNumberslist(-4,8)  
