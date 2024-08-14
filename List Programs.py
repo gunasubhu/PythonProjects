@@ -197,6 +197,17 @@ def countlist(list1):
     list2=list1.count(2)
     print(list2)
 
+#Python | Remove empty tuples from a list
+def Removetuples(tuples):
+    print("Remove empty tuples in a list")
+    emptytuple=()
+    for i in tuples:
+        if i != emptytuple:
+            tuples.remove(i)
+        print(i,end=' ')
+
+Removetuples([('ranjith','15','8'), (), ('parthi', 'jenis'),
+        ('guna', 'raja', '4'), ('',''),()])
 countlist([1,2,3,4,2,5,2,3,2,])
 copylist([1,2,3,[4,6],5])
 empty_list_remove([5, 6, [], 3, [], [], 9])      
