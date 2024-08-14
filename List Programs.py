@@ -187,6 +187,13 @@ def empty_list_remove(mylist):
         if i != emptylist:
             print(i, end=' ')
 
+#Python | Cloning or Copying a list
+def copylist(list1):
+    list2=list1.copy()
+    print(list2)
+
+copylist([1,2,3,[4,6],5])
+
 
 empty_list_remove([5, 6, [], 3, [], [], 9])         
 
