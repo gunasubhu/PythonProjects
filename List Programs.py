@@ -206,6 +206,21 @@ def Removetuples(tuples):
             tuples.remove(i)
         print(i,end=' ')
 
+# print(remove(tuples)) Python program to print duplicates from 
+# a list of integers
+def duplicateList(lis):
+    print("Duplicate List")
+    uniqueList = []
+    duplicateList = []
+    for i in lis:
+        if i not in uniqueList:
+            uniqueList.append(i)
+        elif i not in duplicateList:
+            duplicateList.append(i)
+    print(duplicateList)
+
+duplicateList([1, 2, 1, 2, 3, 4, 5, 1, 1, 2, 5, 6, 7, 8, 9, 9])
+
 Removetuples([('ranjith','15','8'), (), ('parthi', 'jenis'),
         ('guna', 'raja', '4'), ('',''),()])
 countlist([1,2,3,4,2,5,2,3,2,])
