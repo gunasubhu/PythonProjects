@@ -12,6 +12,6 @@ def reverseWord(name):
 
 
 
-reverseWord("Subramani")
+reverseWord("htijnaR")
 
 IsPalindrome("Salem")
