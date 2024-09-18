@@ -11,7 +11,12 @@ def reverseWord(name):
     print("this is reverse string:",rev)
 
 
-
+3.#How to Remove Letters From a String in Python
+def RemoveWord(name):
+    s=name
+    print(s.replace("123","kumar"))
+    
+RemoveWord("Ranjith123")
 reverseWord("htijnaR")
 
 IsPalindrome("Salem")
