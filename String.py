@@ -10,5 +10,8 @@ def reverseWord(name):
     rev=name[::-1]
     print("this is reverse string:",rev)
 
+
+
 reverseWord("Subramani")
+
 IsPalindrome("Salem")
