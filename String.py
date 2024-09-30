@@ -15,6 +15,15 @@ def reverseWord(name):
 def RemoveWord(name):
     s=name
     print(s.replace("123","kumar"))
+
+4.#Check if String Contains Substring in Python
+def substring(name):
+    # substring="Hello Python"
+    if "python"in name:
+        print("yes")
+    else:
+        print("no")
+substring("hello python")
     
 RemoveWord("Ranjith123")
 reverseWord("htijnaR")
