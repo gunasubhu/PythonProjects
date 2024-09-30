@@ -20,9 +20,12 @@ def RemoveWord(name):
 def substring(name):
     # substring="Hello Python"
     if "python"in name:
-        print("yes")
+        print("yes!, it is present in the string")
     else:
-        print("no")
+        print("nope, it is not present in the string")
+
+
+
 substring("hello python")
     
 RemoveWord("Ranjith123")
