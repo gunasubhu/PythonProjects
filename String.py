@@ -25,6 +25,17 @@ def substring(name):
         print("nope, it is not present in the string")
 
 
+5.#Python program to accept the strings which contains all vowels
+def vowels(name):
+    vowel=('a')
+    if vowel in name:
+        print("This is vowels:',vowel)
+    else:
+        print("This is not vowels:',vowel)
+
+    
+              
+vowels('aeiou')
 
 substring("hello python")
     
